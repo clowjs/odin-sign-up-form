@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <title>Sign-up Form - The Odin Project</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-left">
+        <div class="logo">
+          <img src="./odin-lined.png" alt="The Odin Project Logo" />
+          <h1>ODIN</h1>
+        </div>
+      </div>
+      <div class="container-right">
+        <div class="call-to-action">
+          <h1>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams.
+            <p>Sign up <em>now</em> to get started.</p>
+          </h1>
+          <h1>You <em>know</em> you want to.</h1>
+        </div>
+
+        <form class="form" action="./index.html" method="post">
+          <h1>Let's do this!</h1>
+          <div class="form-content">
+            <div class="form-row">
+              <div class="form-item">
+                <label for="first-name">FIRST NAME</label>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first-name"
+                  placeholder="Thor"
+                />
+              </div>
+
+              <div class="form-item">
+                <label for="last-name">LAST NAME</label>
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last-name"
+                  placeholder="Odinson"
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-item">
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" name="email" placeholder="" />
+              </div>
+
+              <div class="form-item">
+                <label for="phone-number">PHONE NUMBER</label>
+                <input
+                  type="tel"
+                  id="phone-number"
+                  name="phone-number"
+                  placeholder=""
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-item">
+                <label for="password">PASSWORD</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  class="error"
+                  placeholder=""
+                />
+                <p class="passwords-no-match">* Passwords do not match</p>
+              </div>
+
+              <div class="form-item">
+                <label for="confirm-password">CONFIRM PASSWORD</label>
+                <input
+                  type="password"
+                  id="confirm-password"
+                  name="confirm-password"
+                  class="error"
+                  placeholder=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <button type="submit">Create Account</button>
+          <h1 class="login">
+            Already have an account? <a href="#" class="login">Log in</a>
+          </h1>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
